@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o CMakeFiles/jpeg_compression.dir/src/main.cpp.o -o jpeg_compression 

@@ -1,0 +1,1 @@
+read bmp : https://stackoverflow.com/questions/5751749/how-can-i-read-bmp-pixel-values-into-an-array
