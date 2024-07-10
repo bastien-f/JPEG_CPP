@@ -3,6 +3,9 @@
 
 #include <vector>
 #include <iostream>
+#include <cmath>
+
+#define DCT_BLOC_SIZE 8
 
 using namespace std;
 
@@ -18,6 +21,10 @@ private:
 
     void YCrCb();
     void throwaway();
+    void dctBloc(vector<char> &dct_res, int x_start, int y_start, vector<char> &image, int max_width);
+    float getDctConstant(int x);
+    vector<char> dct(vector<char> &image);
+    void displayArray(vector<char> &array, int lines, int columns);
 
 public:
     Compressor(vector<char> data, int width, int height);
