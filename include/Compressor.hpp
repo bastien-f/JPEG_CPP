@@ -19,11 +19,26 @@ private:
 
     int size, width, height;
 
+    /**
+     * Divides the image in 3 channels of a different base: RGB -> YCrCb
+     * These channels are put in the lum, chr_r and chr_b attributes vectors
+     */
     void YCrCb();
+
+    /**
+     * Throws away information: half the chrominance information, since the human eye is less sensible to color than to luminance
+     */
     void throwaway();
-    void dctBloc(vector<char> &dct_res, int x_start, int y_start, vector<char> &image, int max_width);
+
     float getDctConstant(int x);
-    vector<char> dct(vector<char> &image);
+    void dctBloc(vector<char> &dct_res, int x_start, int y_start, vector<char> &image, int max_width);
+
+    /**
+     * Does the dct for a specific image
+     */
+    vector<char> dctImage(vector<char> &image, int max_width, int max_height);
+    void dct();
+
     void displayArray(vector<char> &array, int lines, int columns);
 
 public:
