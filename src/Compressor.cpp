@@ -57,7 +57,8 @@ void Compressor::compress()
         static_cast<unsigned char>(148), static_cast<unsigned char>(155), static_cast<unsigned char>(136), static_cast<unsigned char>(155), static_cast<unsigned char>(152), static_cast<unsigned char>(147), static_cast<unsigned char>(147), static_cast<unsigned char>(136)
     };
 
-    vector<int> res = dctImage(test, 8, 8);
+    vector<int> res = dct(test, 8, 8);
+    quantization(res);
 
     displayArray(res, 8, 8);
 
@@ -148,7 +149,7 @@ float Compressor::getDctConstant(int x)
 }
 
 
-vector<int> Compressor::dctImage(vector<unsigned char> &image, int max_width, int max_height)
+vector<int> Compressor::dct(vector<unsigned char> &image, int max_width, int max_height)
 {
     vector<int> dct_res(image.size());
 
@@ -164,12 +165,17 @@ vector<int> Compressor::dctImage(vector<unsigned char> &image, int max_width, in
     return dct_res;
 }
 
-void Compressor::dct()
+void Compressor::quantization(vector<int> &dct_res)
 {
-    // lum = dctImage(lum, width, height);
-    // chr_r = dctImage(chr_r, width/2, height/2);
-    // chr_b = dctImage(chr_b, width/2, height/2);
+    // Check quantization table
+    if (Q.size() != DCT_BLOC_SIZE * DCT_BLOC_SIZE) {std::cerr << "Error, Quantization table of wrong size" << std::endl; exit(-1);}
+
+    for (int index = 0; index < dct_res.size(); index++)
+    {
+        dct_res[index] = floor((float)(dct_res[index])/Q[index % Q.size()] + 0.5);
+    }
 }
+
 
 void Compressor::displayArray(vector<char> &array, int lines, int columns)
 {
