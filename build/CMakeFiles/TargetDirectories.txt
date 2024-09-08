@@ -1,3 +1,0 @@
-/home/bastien/Bureau/Projets/JPEG/build/CMakeFiles/jpeg_compression.dir
-/home/bastien/Bureau/Projets/JPEG/build/CMakeFiles/edit_cache.dir
-/home/bastien/Bureau/Projets/JPEG/build/CMakeFiles/rebuild_cache.dir
