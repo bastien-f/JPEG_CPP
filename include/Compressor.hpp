@@ -12,10 +12,10 @@ using namespace std;
 class Compressor
 {
 private:
-    vector<char> original_image;
-    vector<char> lum;
-    vector<char> chr_r;
-    vector<char> chr_b;
+    vector<unsigned char> original_image;
+    vector<unsigned char> lum;
+    vector<unsigned char> chr_r;
+    vector<unsigned char> chr_b;
 
     int size, width, height;
 
@@ -31,15 +31,16 @@ private:
     void throwaway();
 
     float getDctConstant(int x);
-    void dctBloc(vector<char> &dct_res, int x_start, int y_start, vector<char> &image, int max_width);
+    void dctBloc(vector<int> &dct_res, int x_start, int y_start, vector<unsigned char> &image, int max_width, int max_height);
 
     /**
      * Does the dct for a specific image
      */
-    vector<char> dctImage(vector<char> &image, int max_width, int max_height);
+    vector<int> dctImage(vector<unsigned char> &image, int max_width, int max_height);
     void dct();
 
     void displayArray(vector<char> &array, int lines, int columns);
+    void displayArray(vector<int> &array, int lines, int columns);
 
 public:
     Compressor(vector<char> data, int width, int height);
