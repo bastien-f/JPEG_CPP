@@ -14,7 +14,6 @@ int main()
     Compressor comp(reader.getImage(), reader.getWidth(), reader.getHeight());
     comp.compress();
 
-
     reader.writeImage("../ressources/output.bmp");
 
     return 0;

@@ -3,25 +3,30 @@
 
 #include <vector>
 #include <iostream>
+#include <cmath>
 
-using namespace std;
 
 class Compressor
 {
 private:
-    vector<char> original_image;
-    vector<char> lum;
-    vector<char> chr_r;
-    vector<char> chr_b;
+    std::vector<char> original_image; // 3 channels [r1, g1, b1, r2, g2, b2, ...]
+    std::vector<char> lum;
+    std::vector<char> chr_r;
+    std::vector<char> chr_b;
 
     int size, width, height;
 
     void YCrCb();
     void throwaway();
-
-public:
-    Compressor(vector<char> data, int width, int height);
+    
+    
+    
+    public:
+    Compressor(std::vector<char> data, int width, int height);
     void compress();
+    void RGBExtend();
+    
+    std::vector<char> getImage() {return original_image;}
 };
 
 #endif

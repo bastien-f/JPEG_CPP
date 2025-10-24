@@ -31,11 +31,10 @@ void BmpReader::writeImage(string filepath)
     file.close();
 }
 
-// No working
-void BmpReader::changeImage(vector<char> new_image)
+void BmpReader::changeImage(std::vector<char> &new_image)
 {
-    file_header.total_size = sizeof(file_header) + sizeof(info_header) + new_image.size();
-    info_header.bit_per_pixel = 8;// * info_header.image_size / new_image.size();
-    info_header.image_size = new_image.size();
+    // file_header.total_size = sizeof(file_header) + sizeof(info_header) + new_image.size();
+    // info_header.bit_per_pixel = 8 * info_header.image_size / new_image.size();
+    // info_header.image_size = new_image.size();
     image = new_image;
 }

@@ -37,7 +37,7 @@ struct InfoHeader
 class BmpReader
 {
 private: 
-    vector<char> image;
+    std::vector<char> image;
     FileHeader file_header;
     InfoHeader info_header;
 
@@ -47,10 +47,10 @@ public:
     void readImage(string filepath);
     void writeImage(string filepath);
 
-    void changeImage(vector<char> image);
+    void changeImage(std::vector<char> &image);
 
     int getSize(){return info_header.image_size;}
-    vector<char> getImage(){return image;}
+    std::vector<char> getImage(){return image;}
     int getWidth(){return info_header.width;}
     int getHeight(){return info_header.height;}
 };
