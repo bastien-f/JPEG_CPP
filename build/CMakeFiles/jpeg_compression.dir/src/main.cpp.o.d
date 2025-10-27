@@ -182,4 +182,7 @@ CMakeFiles/jpeg_compression.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/bastien/Projets\ persos/JPEG_CPP/include/Fourier.hpp \
+ /home/bastien/Projets\ persos/JPEG_CPP/include/Encoder.hpp \
+ /home/bastien/Projets\ persos/JPEG_CPP/include/Decoder.hpp

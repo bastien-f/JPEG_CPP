@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o.d"
   "CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o"
   "CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o.d"
+  "CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o"
+  "CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o.d"
   "CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o"
   "CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o.d"
   "CMakeFiles/jpeg_compression.dir/src/main.cpp.o"

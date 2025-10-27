@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bastien/Projets persos/JPEG_CPP/src/BmpReader.cpp" "CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o" "gcc" "CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o.d"
   "/home/bastien/Projets persos/JPEG_CPP/src/Compressor.cpp" "CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o" "gcc" "CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o.d"
+  "/home/bastien/Projets persos/JPEG_CPP/src/Encoder.cpp" "CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o" "gcc" "CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o.d"
   "/home/bastien/Projets persos/JPEG_CPP/src/Fourier.cpp" "CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o" "gcc" "CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o.d"
   "/home/bastien/Projets persos/JPEG_CPP/src/main.cpp" "CMakeFiles/jpeg_compression.dir/src/main.cpp.o" "gcc" "CMakeFiles/jpeg_compression.dir/src/main.cpp.o.d"
   )

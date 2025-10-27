@@ -33,16 +33,25 @@ public:
         array.clear();
     }
 
-    std::vector<float> getArray() {return array;}
+    std::vector<float> &getArray() {return array;}
     void setArray(std::vector<float> &arr, int width, int height) {
         array = arr;
         this->width = width;
         this->height = height;
     }
 
+    void setArray(std::vector<char> &arr, int width, int height) {
+        array.resize(arr.size());
+        for (int i = 0; i < arr.size(); i++)
+        {
+            array[i] = arr[i];
+        }
+        this->width = width;
+        this->height = height;
+    }
+
     void dctBlock(int start);
     void dct();
-    void quantization();
 };
 
 

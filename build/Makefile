@@ -316,6 +316,33 @@ src/Compressor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_compression.dir/build.make CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.s
 .PHONY : src/Compressor.cpp.s
 
+src/Encoder.o: src/Encoder.cpp.o
+.PHONY : src/Encoder.o
+
+# target to build an object file
+src/Encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CodeLib.dir/build.make CMakeFiles/CodeLib.dir/src/Encoder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_compression.dir/build.make CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o
+.PHONY : src/Encoder.cpp.o
+
+src/Encoder.i: src/Encoder.cpp.i
+.PHONY : src/Encoder.i
+
+# target to preprocess a source file
+src/Encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CodeLib.dir/build.make CMakeFiles/CodeLib.dir/src/Encoder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_compression.dir/build.make CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.i
+.PHONY : src/Encoder.cpp.i
+
+src/Encoder.s: src/Encoder.cpp.s
+.PHONY : src/Encoder.s
+
+# target to generate assembly for a file
+src/Encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CodeLib.dir/build.make CMakeFiles/CodeLib.dir/src/Encoder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jpeg_compression.dir/build.make CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.s
+.PHONY : src/Encoder.cpp.s
+
 src/Fourier.o: src/Fourier.cpp.o
 .PHONY : src/Fourier.o
 
@@ -420,6 +447,9 @@ help:
 	@echo "... src/Compressor.o"
 	@echo "... src/Compressor.i"
 	@echo "... src/Compressor.s"
+	@echo "... src/Encoder.o"
+	@echo "... src/Encoder.i"
+	@echo "... src/Encoder.s"
 	@echo "... src/Fourier.o"
 	@echo "... src/Fourier.i"
 	@echo "... src/Fourier.s"

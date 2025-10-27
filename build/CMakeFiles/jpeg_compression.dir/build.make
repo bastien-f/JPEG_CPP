@@ -97,10 +97,24 @@ CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/bastien/Projets persos/JPEG_CPP/src/Compressor.cpp" -o CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.s
 
+CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o: CMakeFiles/jpeg_compression.dir/flags.make
+CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o: /home/bastien/Projets\ persos/JPEG_CPP/src/Encoder.cpp
+CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o: CMakeFiles/jpeg_compression.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o -MF CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o.d -o CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o -c "/home/bastien/Projets persos/JPEG_CPP/src/Encoder.cpp"
+
+CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/bastien/Projets persos/JPEG_CPP/src/Encoder.cpp" > CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.i
+
+CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/bastien/Projets persos/JPEG_CPP/src/Encoder.cpp" -o CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.s
+
 CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o: CMakeFiles/jpeg_compression.dir/flags.make
 CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o: /home/bastien/Projets\ persos/JPEG_CPP/src/Fourier.cpp
 CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o: CMakeFiles/jpeg_compression.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o -MF CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o.d -o CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o -c "/home/bastien/Projets persos/JPEG_CPP/src/Fourier.cpp"
 
 CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.s: cmake_force
 CMakeFiles/jpeg_compression.dir/src/main.cpp.o: CMakeFiles/jpeg_compression.dir/flags.make
 CMakeFiles/jpeg_compression.dir/src/main.cpp.o: /home/bastien/Projets\ persos/JPEG_CPP/src/main.cpp
 CMakeFiles/jpeg_compression.dir/src/main.cpp.o: CMakeFiles/jpeg_compression.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/jpeg_compression.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/jpeg_compression.dir/src/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/jpeg_compression.dir/src/main.cpp.o -MF CMakeFiles/jpeg_compression.dir/src/main.cpp.o.d -o CMakeFiles/jpeg_compression.dir/src/main.cpp.o -c "/home/bastien/Projets persos/JPEG_CPP/src/main.cpp"
 
 CMakeFiles/jpeg_compression.dir/src/main.cpp.i: cmake_force
@@ -129,6 +143,7 @@ CMakeFiles/jpeg_compression.dir/src/main.cpp.s: cmake_force
 jpeg_compression_OBJECTS = \
 "CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o" \
 "CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o" \
+"CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o" \
 "CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o" \
 "CMakeFiles/jpeg_compression.dir/src/main.cpp.o"
 
@@ -137,12 +152,13 @@ jpeg_compression_EXTERNAL_OBJECTS =
 
 jpeg_compression: CMakeFiles/jpeg_compression.dir/src/BmpReader.cpp.o
 jpeg_compression: CMakeFiles/jpeg_compression.dir/src/Compressor.cpp.o
+jpeg_compression: CMakeFiles/jpeg_compression.dir/src/Encoder.cpp.o
 jpeg_compression: CMakeFiles/jpeg_compression.dir/src/Fourier.cpp.o
 jpeg_compression: CMakeFiles/jpeg_compression.dir/src/main.cpp.o
 jpeg_compression: CMakeFiles/jpeg_compression.dir/build.make
 jpeg_compression: libCodeLib.a
 jpeg_compression: CMakeFiles/jpeg_compression.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable jpeg_compression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/bastien/Projets persos/JPEG_CPP/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable jpeg_compression"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jpeg_compression.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
