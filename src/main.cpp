@@ -16,7 +16,6 @@ int main()
     // Compressor comp(reader.getImage(), reader.getWidth(), reader.getHeight(), output_path);
     // comp.compress();
 
-    Decompressor decoder(output_path);
 
     return 0;
 }

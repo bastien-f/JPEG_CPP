@@ -51,7 +51,34 @@ float Fourier::c(int i, int j)
   
 void Fourier::dct()
 {
-    std::vector<char> result(array.size());
+    int block_size = 8;
+
+    if (width * height != array.size()) throw "DCT : mauvaise largeur et hauteur";
+    if (width % block_size != 0 || height % block_size != 0) throw "DCT : hauteur ou largeur de taille non compatible avec le bloc";
+
+    int nb_col = width / block_size, nb_lines = height / block_size;
+
+    for (int i = 0; i < nb_lines; i++)
+    {
+        for (int j = 0; j < nb_col; j++)
+        {
+            dctBlock(i * block_size * width + j * block_size);
+        }
+    }
+}
+
+
+
+
+
+void Fourier::reverseDctBlock(int start)
+{
+
+}
+
+
+void Fourier::reverseDct()
+{
     int block_size = 8;
 
     if (width * height != array.size()) throw "DCT : mauvaise largeur et hauteur";

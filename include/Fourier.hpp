@@ -52,6 +52,9 @@ public:
 
     void dctBlock(int start);
     void dct();
+
+    void reverseDctBlock(int start);
+    void reverseDct();
 };
 
 

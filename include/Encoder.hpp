@@ -62,12 +62,4 @@ public:
 };
 
 
-
-
-// Quantization Matrices ------------------------------------------------------------------------
-
-// 50% Quality with blocks of size 8
-extern std::vector<int> Q50_8;
-
-
 #endif
